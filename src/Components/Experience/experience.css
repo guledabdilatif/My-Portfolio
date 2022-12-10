@@ -1,0 +1,10 @@
+.experience-box{
+    margin: 1rem;
+    text-align: center;
+    border-radius: 6px;
+
+}
+.experience-icon{
+    color: var(--color-primary);
+    font-size: 6rem;
+}

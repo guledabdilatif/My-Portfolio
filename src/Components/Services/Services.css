@@ -1,0 +1,27 @@
+.services-box{
+    margin: 1rem;
+    background: var(--color-bg);
+    border-radius: 0 0 2rem 2rem;
+    padding-bottom:2rem ;
+
+}
+.services-box h5{
+    color: var(--color-bg);
+    background: var(--color-primary);
+    padding: 21px 30px;
+    border-radius: 0 0 2rem 2rem;
+}
+.flex{
+    display: flex;
+}
+
+.services-box p{
+    color: #fff;
+    list-style: none;
+    margin: 2rem 0;
+   
+}
+.services-box p::before{
+    content: '';
+    margin-right:8px;
+}

@@ -1,0 +1,58 @@
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    gap: 1rem;
+}
+.contact-card{
+    background: var( --color-bg-variant);
+    padding: 14px;
+    width: 70%;
+    border-radius: 6px;
+    transition: 0.5;
+}
+
+.contact-card h6{
+    color: white;
+}
+.contact-card a{
+    text-decoration: none;
+    color: var(--color-primary);
+}
+.contact-card .icon{
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 1rem 0;
+}
+.col-md-7 form{
+    margin:1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.col-md-7 input, .col-md-7 textarea{
+    padding: 10px 30px;
+    border-radius: 6px;
+    color: black;
+    margin: 1rem 0;
+    border: 1px solid var( --color-primary);
+    background: transparent;
+    outline: none;
+}
+form input:nth-child(4){
+background: var(--color-primary);
+width: 30%;
+color: var(--color-bg);
+
+}
+@media (max-width:768px){
+    .contact-container{
+        align-items: center;
+    }
+    .contact-card{
+        background: var( --color-bg-variant);
+        padding: 14px;
+        width:100%;
+        border-radius: 6px;
+    }
+}
