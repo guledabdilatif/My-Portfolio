@@ -1,15 +1,20 @@
 .services-box{
     margin: 1rem;
-    background: var(--color-bg);
-    border-radius: 0 0 2rem 2rem;
-    padding-bottom:2rem ;
+    
+    border-radius: 0 0 1rem 1rem;
+    padding-bottom:1rem;
+   
 
+}
+.services-box img{
+    width: 100%;
+    background: white;   
 }
 .services-box h5{
     color: var(--color-bg);
     background: var(--color-primary);
     padding: 21px 30px;
-    border-radius: 0 0 2rem 2rem;
+    border-radius: 0 0 1rem 1rem;
 }
 .flex{
     display: flex;
@@ -24,4 +29,10 @@
 .services-box p::before{
     content: '';
     margin-right:8px;
+}
+@media(max-width:300px){
+    .services-box img{
+        width: 200px;
+        background: white;   
+    }
 }

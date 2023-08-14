@@ -1,53 +1,103 @@
-.portfolio-column{
-    padding: 24px;
-}
-.porfolio-outer{
-    background: var( --color-bg-variant);
-    border-radius:1rem ;
-    padding: 4px;
-    margin:2rem;
-}
-.portfolio-column img{
-    width: 100%;
-    border-radius: 1rem;
-}
-.portfolio-column p{
-    text-align: left;
-    margin: 10px 0;
-    color: #fff;
-}
-.portfolio-btn a:nth-child(2){
-    padding:5px;
-    background-color: transparent;
+button {
+    padding: 10px 30px;
+    background: transparent;
+    outline: none;
     border: 1px solid var(--color-primary);
-    border-radius: 6px;
-    color: var(--color-primary);
-    text-decoration: none;
+    margin: 30px;
+    color: black;
+    font-weight: 400;
+    font-size: 32px;
     text-align: center;
-    font-style: 16px;
+    margin-top: -100px;
 }
-.portfolio-column-1 img{
-    height: 50vh;
+
+.content {
+    display: none;
+}
+
+.show-content {
+    display: block;
+}
+
+.web-rows {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 30px;
+    gap: 30px;
+    margin-top: 30px;
 
 }
-.portfolio-btn{
+
+.web-rows img {
+    cursor: pointer;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.5);
+}
+
+.web-details {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    gap: 1rem;
+    margin-top: 10px;
 }
-.portfolio-btn a:nth-child(1){
-    padding:5px;
-    background:var(--color-primary) ;
-    border: 1px solid transparent;
-    border-radius: 6px;
-    color: var(--color-bg);
+
+.web-details p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.web-details a:nth-child(2) {
     text-decoration: none;
-    text-align: center;
-    font-size: 16px;
+    margin-top: -20px;
+    font-size: 18px;
 }
-.portfolio-btn a:nth-child(2):hover{
-    background: transparent;
-    border: 1px solid var(--color-primary);
-    border-radius: 6px;
-    color: var(--color-primary);
+
+.web-rows img {
+    width: 340px;
+    height: 200px;
+
+}
+
+@media(max-width:900px) {
+    .web-rows {
+        grid-template-columns: 1fr;
+        align-items: flex-start;
+        margin: 0;
+        max-width: 300px;
+        margin-top: 70px;
+        align-items: center;
+        padding:0 20px;
+    }
+
+    .web-rows img {
+        width: 300px;
+        height: 180px;
+
+    }
+
+    button {
+        font-size: 10px;
+        padding: 0;
+        width: 100px;
+        margin: 0 2px;
+
+    }
+
+    .web-row-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .web-details {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+}
+@media(max-width:300px){
+    .web-rows img {
+        width: 240px;
+        height: 130px;
+
+    }
 }

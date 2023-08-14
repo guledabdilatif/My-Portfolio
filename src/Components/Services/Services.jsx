@@ -1,45 +1,33 @@
 import React from "react";
 import "./Services.css";
+import web from '../../Assets/web-development.png'
+import ui from '../../Assets/ui.png'
+import mobileApp from '../../Assets/app-development.png'
 
 const Services = () => {
   return (
-    <section id="Services" className="container">
+    <section id="Services" className="container text-center">
       <h5 className="text-center">What I Offer</h5>
       <h1 className="text-center">Services</h1>
       <div className="row">
         <div className="col-md-4">
-          <div className="services-box">
+          <div className="services-box text-center">
             <h5 className="text-center">UI/UX Design</h5>
-           
-              <p className="text-center">Goal Identification</p>
-              <p className="text-center">Sitemap and wireframe creation</p>
-              <p className="text-center">Designing</p>
-              <p className="text-center">Launching</p>
-       
+            <img src={ui} alt="" />
+
           </div>
         </div>
         <div className="col-md-4">
-          <div className="services-box">
+          <div className="services-box text-center">
             <h5 className="text-center">Web Development</h5>
-           
-              <p className="text-center">Information Gathering</p>
-              <p className="text-center">Structure of the Website</p>
-              <p className="text-center">Designing of the Website</p>
-              <p className="text-center">Building The Website</p>
-              <p className="text-center">Deploying the Website</p>
-           
+            <img src={web} alt="" />
           </div>
         </div>
         <div className="col-md-4">
-          <div className="services-box">
-            <h5 className="text-center">Content Creation</h5>
-           
-              <p className="text-center">Planing</p>
-              <p className="text-center">Topic Identification</p>
-              <p className="text-center">Create Content</p>
-              <p className="text-center">Edit</p>
-              <p className="text-center">Publish</p>
-           
+          <div className="services-box text-center">
+            <h5 className="text-center">Mobile Development</h5>
+            <img src={mobileApp} alt="" />
+
           </div>
         </div>
       </div>

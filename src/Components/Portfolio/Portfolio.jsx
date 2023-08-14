@@ -1,100 +1,58 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Portfolio.css";
-import portfolio1 from "../../Assets/portfolio1.png";
-import portfolio2 from "../../Assets/portfolio2.png";
-import portfolio3 from "../../Assets/portfolio3.png";
-import portfolio4 from "../../Assets/portfolio4.png";
-import portfolio5 from "../../Assets/portfolio5.png";
-import portfolio6 from "../../Assets/portfolio6.png";
+import { portfolioDetails } from "./portfolioDetails";
 
 const Portfolio = () => {
+  const [toggle, setToggle] = useState(1);
+  function updateToggle(id) {
+    setToggle(id)
+  }
+
+
   return (
     <section id="Portfolio" className="container">
       <h5 className="text-center">My Recent Work</h5>
       <h1 className="text-center">Portfolio</h1>
-      <div className="row">
-        <div className="col-md-4">
-        <div className="porfolio-outer">
-        <div className="portfolio-column text-center">
-        <img src={portfolio1} alt="" />
-        <p>
-       Coffee Website
-        </p>
-        <div className="portfolio-btn">
-        <a href="https://github.com/guledabdilatif/Coffee-Website" className="text-center" target="_blank">Github</a>
-        <a href="https://caffeine-site.netlify.app" target='_blank'>View On Browser</a>
+      <div className="portfolio-tabs text-center ">
+
+        <button onClick={() => updateToggle(1)}>Websites</button>
+        <button onClick={() => updateToggle(2)}>Designs</button>
+        <button onClick={() => updateToggle(3)}>Mobile Apps</button>
+        <div className={toggle === 1 ? "show-content" : "content"}>
+          <div className="web-rows text-center">
+            {portfolioDetails.map((item) => {
+              return <div>
+                <div className="web-row-container">
+                  <img src={item.webimage} alt="" />
+                  <div className="web-details">
+                    <p>{item.webname}</p>
+                    <a href={item.weblink}>{item.view}</a>
+                  </div>
+                </div>
+              </div>
+            })}
+          </div>
         </div>
+        <div className={toggle === 2 ? "show-content" : "content"}>
+          <div className="web-rows">
+            {portfolioDetails.map((item) => {
+              return <div>
+                <div>
+                  <img src={item.desingimage} alt="" />
+                  <div className="web-details">
+                    <p>{item.desingname}</p>
+
+                  </div>
+                </div>
+              </div>
+            })}
+          </div>
+
         </div>
+        <div className={toggle === 3 ? "show-content" : "content"}>
+          <h1>Mobile Apps</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et facilis tenetur perferendis explicabo cupiditate saepe libero sapiente culpa, doloribus possimus? Ratione facilis placeat quam vitae tempora. Est hic omnis aliquid.F</p>
         </div>
-        </div>
-        <div className="col-md-4">
-        <div className="porfolio-outer">
-        <div className="portfolio-column text-center">
-        <img src={portfolio2} alt="" />
-        <p>
-        Tour and Travel Website
-        </p>
-        <div className="portfolio-btn">
-        <a href="https://github.com/guledabdilatif/tour-and-travel-website" className="text-center" target="_blank">Github</a>
-        <a href="https://travel-travel-site.netlify.app" target='_blank'>View On Browser</a>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div className="col-md-4">
-        <div className="porfolio-outer">
-        <div className="portfolio-column text-center">
-        <img src={portfolio3} alt="" />
-        <p>
-        Food Website
-        </p>
-        <div className="portfolio-btn">
-        <a href="https://github.com/guledabdilatif/Food-website" className="text-center" target="_blank">Github</a>
-        <a href="https://refreshment.netlify.app" target='_blank'>View On Browser</a>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div className="col-md-4">
-        <div className="porfolio-outer">
-        <div className="portfolio-column text-center">
-        <img src={portfolio4} alt="" />
-        <p>
-        Food Website Design
-        </p>
-        <div className="portfolio-btn">
-        <a href="https://www.figma.com/file/svNxChr2lqChjwjDTGcjSO/Food-web-App-Design?node-id=2%3A2&t=TLDKGs4e81aTbuz7-1" target='_blank'>View On Figma</a>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div className="col-md-4">
-        <div className="porfolio-outer">
-        <div className="portfolio-column portfolio-column-1 text-center">
-        <img src={portfolio5} alt="" />
-        <p>
-       Website Design
-        </p>
-        <div className="portfolio-btn">
-        <a href="https://www.figma.com/file/ug4V40f0K4X8b8h3wIuBPJ/project-1?node-id=0%3A1&t=46wcLx5xMb2QNZk6-1" target='_blank'>View On Figma</a>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div className="col-md-4">
-        <div className="porfolio-outer">
-        <div className="portfolio-column text-center">
-        <img src={portfolio6} alt="" />
-        <p>
-        PC Login Design
-        </p>
-        <div className="portfolio-btn">
-        <a href="https://www.figma.com/file/IeTsYdYhKgcUw9uUKX6lvt/Login-iMac-1?node-id=0%3A1&t=UeLkpsa5VLTZqwcj-1" target='_blank'>View On Figma</a>
-        </div>
-        </div>
-        </div>
-        </div>
-        
       </div>
     </section>
   );
