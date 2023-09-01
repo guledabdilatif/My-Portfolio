@@ -41,20 +41,20 @@ button {
 }
 
 .web-details p {
-    font-weight: bold;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 21px; 
 }
-
-.web-details a:nth-child(2) {
-    text-decoration: none;
-    margin-top: -20px;
-    font-size: 18px;
-}
-
 .web-rows img {
     width: 340px;
     height: 200px;
 
+}
+.anchor{
+    text-decoration: none;
+    font-size: 16px;
+    padding: 2px 6px;
+    border: 1px solid var(--color-primary);
+    color: #000;
 }
 
 @media(max-width:900px) {
