@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Portfolio.css";
-import { WebsitesDetails, DesignsDetails } from "./portfolioDetails";
+import { WebsitesDetails, DesignsDetails, mobileDetails } from "./portfolioDetails";
 
 const Portfolio = () => {
   const [toggle, setToggle] = useState(1);
@@ -18,7 +18,7 @@ const Portfolio = () => {
         <button onClick={() => updateToggle(1)}>Websites</button>
         <button onClick={() => updateToggle(2)}>Designs</button>
         <button onClick={() => updateToggle(3)}>Mobile Apps</button>
-        <div className={toggle === 1 ? "show-content" : "content"}>
+        <div className={toggle === 1 ? "show-content text-center" : "content text-center"}>
           {/* web */}
           <div className="web-rows text-center">
             {WebsitesDetails.map((item) => {
@@ -28,8 +28,8 @@ const Portfolio = () => {
                   <div className="web-details ">
                     <p>{item.webname}</p>
                     <div style={{ display: 'flex', gap: 3, alignItems: 'center' }}>
-                      <a href={item.weblink} target="_blank" className="anchor">{item.view}</a>
-                      <a href={item.GithubLink} target="_blank" style={{ fontSize: 24, marginLeft: 10, marginTop: -10, textDecoration: 'none' }}>{item.GithubIcon}</a>
+                      <a href={item.weblink} target="_blank" rel="noopener noreferrer" className="anchor">{item.view}</a>
+                      <a href={item.GithubLink} target="_blank" rel="noopener noreferrer" style={{ fontSize: 24, marginLeft: 10, marginTop: -10, textDecoration: 'none' }}>{item.GithubIcon}</a>
                     </div>
                   </div>
                 </div>
@@ -47,8 +47,8 @@ const Portfolio = () => {
                   <div className="web-details">
                     <p>{item.desingname}</p>
                     <div>
-                      <a href={item.downloaddesign} target="_blank" className="anchor" download>Download</a>
-                      <a href={item.figmafileLink} target="_blank" style={{ fontSize: 24, marginLeft: 10, marginTop: -10, textDecoration: 'none' }}>{item.figmaIcon}</a>
+                      <a href={item.downloaddesign} target="_blank" rel="noopener noreferrer" className="anchor" download>Download</a>
+                      <a href={item.figmafileLink} target="_blank" rel="noopener noreferrer" style={{ fontSize: 24, marginLeft: 10, marginTop: -10, textDecoration: 'none' }}>{item.figmaIcon}</a>
                     </div>
                   </div>
                 </div>
@@ -59,8 +59,22 @@ const Portfolio = () => {
         </div>
         {/* mobile apps */}
         <div className={toggle === 3 ? "show-content" : "content"}>
-          <h1>Mobile Apps</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et facilis tenetur perferendis explicabo cupiditate saepe libero sapiente culpa, doloribus possimus? Ratione facilis placeat quam vitae tempora. Est hic omnis aliquid.F</p>
+          <div className="web-rows">
+            {mobileDetails.map((item) => {
+              return <div>
+                <div>
+                  <img src={item.image} alt="" />
+                  <div className="web-details">
+                    <p>{item.name}</p>
+                    <div>
+                      <a href={item.image} target="_blank" rel="noopener noreferrer" className="anchor" download>Download</a>
+                      <a href={item.githubLink} target="_blank" rel="noopener noreferrer" style={{ fontSize: 24, marginLeft: 10, marginTop: -10, textDecoration: 'none' }}>{item.githubIcon}</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            })}
+          </div>
         </div>
       </div>
     </section>

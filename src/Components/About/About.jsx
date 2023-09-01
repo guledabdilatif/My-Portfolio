@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import ME from "../../Assets/me-about.jpg";
+import ME from "../../Assets/images/me-about.jpg";
 import { FaBook, FaAward } from "react-icons/fa";
 import { AiFillProject } from "react-icons/ai";
 import NumberCounter from 'number-counter';

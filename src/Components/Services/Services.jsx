@@ -1,8 +1,8 @@
 import React from "react";
 import "./Services.css";
-import web from '../../Assets/web-development.png'
-import ui from '../../Assets/ui.png'
-import mobileApp from '../../Assets/app-development.png'
+import web from '../../Assets/images/web-development.png'
+import ui from '../../Assets/images/ui.png'
+import mobileApp from '../../Assets/images/app-development.png'
 
 const Services = () => {
   return (

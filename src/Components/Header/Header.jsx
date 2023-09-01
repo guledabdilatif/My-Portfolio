@@ -1,10 +1,10 @@
 import React from 'react'
 import './header.css'
-import CV from '../../Assets/cv.pdf'
+import CV from '../../Assets/images/cv.pdf'
 import { AiOutlineGithub } from 'react-icons/ai'
 import { FaWhatsapp } from 'react-icons/fa'
 import { RxEnvelopeClosed } from 'react-icons/rx'
-import me from '../../Assets/me.png'
+import me from '../../Assets/images/me.png'
 import Nav from '../Nav/Nav'
 const Header = () => {
    return (

@@ -5,6 +5,7 @@ import {DiCss3Full} from 'react-icons/di'
 import {DiJavascript1} from 'react-icons/di'
 import {AiFillGithub} from 'react-icons/ai'
 import {FaBootstrap, FaFigma, FaReact} from 'react-icons/fa'
+import {TbBrandReactNative} from 'react-icons/tb'
 
 const Experience = () => {
   return (
@@ -54,11 +55,18 @@ const Experience = () => {
           <h6>Intermediate</h6>
         </div>
       </div>
-      <div className="col-md-12 text-center">
+      <div className="col-md-6 text-center">
         <div className="experience-box">
           <div className="experience-icon text-center"><AiFillGithub/></div>
           <h4>Github</h4>
-          <h6>Basic</h6>
+          <h6>Experienced</h6>
+        </div>
+      </div>
+      <div className="col-md-6 text-center">
+        <div className="experience-box">
+          <div className="experience-icon text-center"><TbBrandReactNative/></div>
+          <h4>React native</h4>
+          <h6>Intermediate</h6>
         </div>
       </div>
     </div>
