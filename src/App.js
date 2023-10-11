@@ -6,18 +6,17 @@ import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Portfolio from './Components/Portfolio/Portfolio';
 import Services from './Components/Services/Services';
-
 function App() {
   return (
     <>
-    <Header/>
-    <About/>
-    <Experience/>
-    <Services/>
-    <Portfolio/>
-    <Contact/>
-    <Footer/>
-   
+      <Header/>
+      <About />
+      <Experience />
+      <Services />
+      <Portfolio />
+      <Contact />
+      <Footer />
+
     </>
   );
 }

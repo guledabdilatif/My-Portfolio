@@ -7,6 +7,7 @@ import YouTubeUI from "../../Assets/web/YoutubeClone-UI.png";
 import FoodWebDesign from "../../Assets/Designs/portfolio4.png";
 import PCLoginDesign from "../../Assets/Designs/portfolio6.png";
 import mobileLoginUI from "../../Assets/Designs/mobile-login-ui.png";
+import Brochure from "../../Assets/Designs/Brochure.jpg";
 import SignUP from "../../Assets/Designs/Sign-Up.png";
 import Checkout from "../../Assets/Designs/Checkout.png";
 import eBike from "../../Assets/Designs/e-Bike-Web-UI.png";
@@ -84,8 +85,13 @@ export const DesignsDetails = [
         figmaIcon: <FiFigma />,
         figmafileLink: LoginMobileFigmaFile,
         downloaddesign: mobileLoginUI,
-        desingname: " Mobile Login UiI",
+        desingname: " Mobile Login UI",
         desingimage: mobileLoginUI,
+    },
+    {
+        downloaddesign: Brochure,
+        desingname: " Brochure",
+        desingimage: Brochure,
     },
 ]
 export const WebsitesDetails = [
