@@ -15,17 +15,20 @@ const Header = () => {
       });
    }, [])
    return (
-      <section id='#' data-aos="fade-down">
+      <section id='#'>
          <div className="header">
             <div className="container">
                <div className="text-center">
                   <Nav />
+                  <div>
+                     
+                  </div>
                   <div className="margin"></div>
                   <h5>Hello I'm</h5>
                   <h1>ABDILADIF MOHAMUD</h1>
                   <h4>Frontend Developer</h4>
-                  <div className="buttons">
-                     <a href={Resume} className='btn' download>Download Resume</a>
+                  <div className="buttons text-center">
+                     <a href={Resume} className='btn' download>Download CV</a>
                      <a href="#Contact" className='btn-primary'>Let's Talk</a>
                   </div>
                   <div className="row" data-aos="fade-up">

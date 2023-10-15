@@ -3,6 +3,8 @@ import "./nav.css";
 import { useState } from "react";
 import {AiOutlineBars} from 'react-icons/ai'
 
+import 'aos/dist/aos.css';
+
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
   const [open, setOpen] = useState(true);
