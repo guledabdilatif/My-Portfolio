@@ -6,6 +6,8 @@ import { DiJavascript1 } from 'react-icons/di'
 import { AiFillGithub } from 'react-icons/ai'
 import { FaBootstrap, FaFigma, FaReact, FaGitAlt } from 'react-icons/fa'
 import { TbBrandReactNative } from 'react-icons/tb'
+import { SiAdobeillustrator } from 'react-icons/si'
+import { FaPhp } from "react-icons/fa";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -50,9 +52,23 @@ const Experience = () => {
         </div>
         <div className="col-md-4 text-center" data-aos="fade-up">
           <div className="experience-box">
+            <div className="experience-icon text-center"><FaPhp /></div>
+            <h4>PHP</h4>
+            <h6>Intermediate</h6>
+          </div>
+        </div>
+        <div className="col-md-4 text-center" data-aos="fade-up">
+          <div className="experience-box">
             <div className="experience-icon text-center"><FaFigma /></div>
             <h4>Figma</h4>
             <h6>Intermediate</h6>
+          </div>
+        </div>
+        <div className="col-md-4 text-center" data-aos="fade-up">
+          <div className="experience-box">
+            <div className="experience-icon text-center"><SiAdobeillustrator /></div>
+            <h4>Adobe Illustrator</h4>
+            <h6>Experienced</h6>
           </div>
         </div>
         <div className="col-md-4 text-center" data-aos="fade-up">

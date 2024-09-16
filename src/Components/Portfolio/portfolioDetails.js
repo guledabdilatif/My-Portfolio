@@ -2,6 +2,7 @@
 import coffee from "../../Assets/web/portfolio1.png";
 import TourandTravelWebsite from "../../Assets/web/portfolio2.png";
 import FoodWebsite from "../../Assets/web/portfolio3.png";
+import GithubImage from "../../Assets/web/GithubImage.png";
 import FacebookUI from "../../Assets/web/facebookClone-UI.png";
 import YouTubeUI from "../../Assets/web/YoutubeClone-UI.png";
 import FoodWebDesign from "../../Assets/Designs/portfolio4.png";
@@ -24,6 +25,7 @@ var TourandTravelWebsiteLink = "https://travel-travel-site.netlify.app";
 var TourandTravelGithubLink = "https://github.com/guledabdilatif/tour-and-travel-website";
 var FoodWebsiteLink = "https://refreshment.netlify.app";
 var FoodWebsiteGithubLink = "https://github.com/guledabdilatif/Food-website";
+var GithubLink = "https://github.com/guledabdilatif";
 
 //Web file Link
 var YouTubeLink = "https://youtubeclone-ui.netlify.app/";
@@ -134,6 +136,12 @@ export const WebsitesDetails = [
         view: "Demo",
         GithubIcon: <AiFillGithub />,
         GithubLink: FoodWebsiteGithubLink,
+    },
+    {
+        webname: "Want to see More projects i worked on? Click on github icon, just infront.",
+        webimage: GithubImage,
+        GithubIcon: <AiFillGithub />,
+        GithubLink: GithubLink,
     },
 ]
 export const mobileDetails = [
