@@ -5,7 +5,7 @@
     gap: 1rem;
 }
 .contact-card{
-    background: var( --color-bg-variant);
+    border:1px solid white;
     padding: 14px;
     width: 70%;
     border-radius: 6px;
@@ -34,9 +34,9 @@
 .col-md-7 input, .col-md-7 textarea{
     padding: 10px 30px;
     border-radius: 6px;
-    color: black;
+    color: var(--color-secondary);
     margin: 1rem 0;
-    border: 1px solid var( --color-primary);
+    border: 1px solid white;
     background: transparent;
     outline: none;
     width: 100%;

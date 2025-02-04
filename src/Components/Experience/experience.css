@@ -2,9 +2,11 @@
     margin: 1rem;
     text-align: center;
     border-radius: 6px;
-
+    border: 1PX solid var(--color-secondary);
+padding: 10px;
 }
 .experience-icon{
-    color: var(--color-primary);
+    color: var(--color-secondary);
     font-size: 6rem;
+
 }

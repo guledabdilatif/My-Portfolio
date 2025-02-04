@@ -2,6 +2,7 @@ import React from "react";
 import "./nav.css";
 import { useState } from "react";
 import {AiOutlineBars} from 'react-icons/ai'
+import logo from '../../Assets/images/logo.png'
 
 import 'aos/dist/aos.css';
 
@@ -21,7 +22,7 @@ const Nav = () => {
             onClick={() => setActiveNav("#")}
             className={activeNav === "#" ? "" : ""}
           >
-           ABDILADIF MOHAMUD
+          <img src={logo} alt=""/>
           </a>
           </div>
         <div className={ open ? "nav-right": "hide-navright"}>
@@ -44,7 +45,7 @@ const Nav = () => {
             onClick={() => setActiveNav("#Experience")}
             className={activeNav === "#Experience" ? "active" : ""}
           >
-            Experience
+            Skills
           </a>
           <a
             href="#Services"
@@ -58,7 +59,7 @@ const Nav = () => {
             onClick={() => setActiveNav("#Portfolio")}
             className={activeNav === "#Portfolio" ? "active" : ""}
           >
-            Portfolio
+            Projects
           </a>
           <a
             href="#Contact"

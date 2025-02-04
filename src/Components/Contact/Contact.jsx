@@ -3,48 +3,48 @@ import "./contact.css"
 import { RxEnvelopeClosed } from "react-icons/rx";
 import { FaWhatsapp } from "react-icons/fa";
 import { BiPhoneCall } from "react-icons/bi";
-import emailjs from '@emailjs/browser';
 import { useRef } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Contact = () => {
-  const form = useRef();
+  
   useEffect(() => {
     AOS.init({
       duration: 2000
     });
   }, [])
-
-  const onSubmit = async (event) => {
-  event.preventDefault();
-  const form = event.target;
-  const formData = new FormData(form);
-
-  formData.append("access_key", "4558d96b-7737-4239-80e4-f3462e986684");
-
-  const object = Object.fromEntries(formData);
-  const json = JSON.stringify(object);
-
-  const res = await fetch("https://api.web3forms.com/submit", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json"
-    },
-    body: json
-  }).then((res) => res.json());
-
-  if (res.success) {
-    console.log("Success", res);
-    // Clear the form after successful submission
-    form.reset();
+  const submitform = () => {
+    alert('Your details have been successfully submitted')
   }
-};
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+
+    formData.append("access_key", "4558d96b-7737-4239-80e4-f3462e986684");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      console.log("Success", res);
+      // Clear the form after successful submission
+      form.reset();
+    }
+  };
 
   return (
     <section id="Contact" className="container" data-aos="fade-up">
-      <h5 className="text-center">Get in Touch</h5>
       <h1 className="text-center">Contact Me</h1>
       <div className="row">
         <div className="col-md-5">
@@ -81,7 +81,7 @@ const Contact = () => {
               cols="30"
               rows="10"
             />
-              <button type="submit">Submit</button>
+            <button type="submit" onClick={() => { submitform() }}>Submit</button>
           </form>
         </div>
       </div>

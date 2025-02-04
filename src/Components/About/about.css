@@ -1,15 +1,17 @@
-.about-image{
-    margin: 0 1rem;
-    width: 100%;
-    text-align: center;
+
+.header-img {
+    background: white;
+    padding: 16px;
+    border-radius: 12rem 12rem 0 0;
+    margin-top: 2rem;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 
 }
-.about-image img{
-    width: 60%;
-    border-radius: 2rem;
-   margin-top: 7rem;
-   transform: rotate(-10deg);
-
+.header-img img {
+    width: 300px;
 }
 .about-icon .icon{
     font-size: 3rem;
@@ -21,7 +23,7 @@
 }
 .about-card{
     padding: 21px;
-    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
     color: white;
     border-radius: 6px;
 }
@@ -35,21 +37,23 @@
 .about-card .icon{
     font-size: 24px;
 }
-.col-md-6 p{
-  margin: 1rem 0;
+.col-md-8 p{
+  margin: 2rem 0;
+  font-size: 20px;
 }
 .btn-primary a{
     text-decoration: none;
     color: var(--color-bg);
 }
-.col-md-6 a {
-    background: var(--color-primary);
-    color: var(--color-bg);
+.col-md-8 a {
+    
+    color: white;
     text-decoration: none;
     margin-top: 2rem;
     padding: 10px 30px;
     border-radius: 6px;
     transition: 0.5s;
+    border: 1px solid var(--color-primary);
 }
 .col-md-6 a:hover{
     background:transparent ;

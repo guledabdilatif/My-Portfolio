@@ -1,6 +1,6 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import "./about.css";
-import ME from "../../Assets/images/me-about.jpg";
+import me from '../../Assets/images/me.png'
 import { FaBook, FaAward } from "react-icons/fa";
 import { AiFillProject } from "react-icons/ai";
 import NumberCounter from 'number-counter';
@@ -15,15 +15,16 @@ const About = () => {
   }, [])
   return (
     <section id="About" className="container" data-aos="fade-up">
-      <h5 className="text-center">Get to Know</h5>
       <h1 className="text-center">About Me</h1>
-      <div className="row">
-        <div className="col-md-6 text-center" data-aos="fade-up">
-          <div className="about-image about-img-bg">
-            <img src={ME} alt="" />
-          </div>
+      <div className="row d-flex align-items-start">
+        <div className="col-md-4 text-center" data-aos="fade-up">
+          
+            <div className="header-img">
+              <img src={me} alt="" />
+            </div>
+         
         </div>
-        <div className="col-md-6" data-aos="fade-up">
+        <div className="col-md-8" data-aos="fade-up">
           <div className="about-content ">
             <div className="about-cards">
               <div className="row">

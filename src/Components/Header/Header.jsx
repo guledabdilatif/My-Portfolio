@@ -4,7 +4,7 @@ import Resume from '../../Assets/images/Resume.pdf'
 import { AiOutlineGithub } from 'react-icons/ai'
 import { FaWhatsapp } from 'react-icons/fa'
 import { RxEnvelopeClosed } from 'react-icons/rx'
-import me from '../../Assets/images/me.png'
+
 import Nav from '../Nav/Nav'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -35,14 +35,10 @@ const Header = () => {
                      <div className="col-md-4 text-center">
                         <div className="social-icons">
                            <a href="https://github.com/guledabdilatif" target='_blank'><AiOutlineGithub className='icon' /></a>
-                           <a href="https://wa.me/+254723710285" target='_blank'> <FaWhatsapp className="icon" /></a>
-                           <a href="mailto:guledabdilatif@gmail.com" target='_blank'>  <RxEnvelopeClosed className="icon" /></a>
                         </div>
                      </div>
                      <div className="col-md-4" data-aos="fade-up">
-                        <div className="header-img">
-                           <img src={me} alt="" />
-                        </div>
+                       
                      </div>
                      <div className="col-md-4">
                         <div className="scroll-down">

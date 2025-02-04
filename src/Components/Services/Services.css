@@ -1,14 +1,19 @@
 .services-box{
     margin: 1rem;
-    
-    border-radius: 0 0 1rem 1rem;
+    padding: 0;
+    border-radius: 1rem;
     padding-bottom:1rem;
-   
+    border: 1px solid var(--color-secondary);
+    height: auto;
+   padding: 30px;
 
 }
 .services-box img{
-    width: 100%;
-    background: white;   
+    width: 60px;
+    background: transparent;
+    float: right;
+    margin-top: -50px;
+    margin-bottom: 10px;  
 }
 .services-box h5{
     color: var(--color-bg);

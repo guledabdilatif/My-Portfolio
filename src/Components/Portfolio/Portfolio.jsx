@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Portfolio.css";
 import { WebsitesDetails, DesignsDetails, mobileDetails } from "./portfolioDetails";
+import { FaCloudDownloadAlt } from "react-icons/fa";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -16,7 +17,6 @@ const Portfolio = () => {
   }, [])
   return (
     <section id="Portfolio" className="container">
-      <h5 className="text-center">My Recent Work</h5>
       <h1 className="text-center">Portfolio</h1>
       <div className="portfolio-tabs text-center" data-aos="fade-up">
 
@@ -33,8 +33,7 @@ const Portfolio = () => {
                   <div className="web-details ">
                     <p>{item.webname}</p>
                     <div style={{ display: 'flex', gap: 3, alignItems: 'center' }}>
-                      <a href={item.weblink} target="_blank" rel="noopener noreferrer" className="anchor">{item.view}</a>
-                      <a href={item.GithubLink} target="_blank" rel="noopener noreferrer" style={{ fontSize: 24, marginLeft: 10, marginTop: -10, textDecoration: 'none' }}>{item.GithubIcon}</a>
+                      <a href={item.weblink} target="_blank" rel="noopener noreferrer" style={{ fontSize: 24, marginLeft: 10, marginTop: -10, textDecoration: 'none' }}>{item.linkIcon}</a>
                     </div>
                   </div>
                 </div>
@@ -52,8 +51,7 @@ const Portfolio = () => {
                   <div className="web-details">
                     <p>{item.desingname}</p>
                     <div>
-                      <a href={item.downloaddesign} target="_blank" rel="noopener noreferrer" className="anchor" download>Download</a>
-                      <a href={item.figmafileLink} target="_blank" rel="noopener noreferrer" style={{ fontSize: 24, marginLeft: 10, marginTop: -10, textDecoration: 'none' }}>{item.figmaIcon}</a>
+                      <a href={item.downloaddesign} target="_blank" rel="noopener noreferrer" className="anchor" download><FaCloudDownloadAlt /></a>
                     </div>
                   </div>
                 </div>
@@ -72,8 +70,7 @@ const Portfolio = () => {
                   <div className="web-details">
                     <p>{item.name}</p>
                     <div>
-                      <a href={item.image} target="_blank" rel="noopener noreferrer" className="anchor" download>Download</a>
-                      <a href={item.githubLink} target="_blank" rel="noopener noreferrer" style={{ fontSize: 24, marginLeft: 10, marginTop: -10, textDecoration: 'none' }}>{item.githubIcon}</a>
+                      <a href={item.image} target="_blank" rel="noopener noreferrer" className="anchor" download><FaCloudDownloadAlt /></a>
                     </div>
                   </div>
                 </div>
