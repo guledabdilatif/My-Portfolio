@@ -70,11 +70,12 @@ nav a {
         padding: 0 10px;
         z-index: -1;
         background-color: var(--color-primary) !important;
+        display: none;
     }
    
 
     .hide-navright {
-        display: none;
+        display: block;
     }
 
     nav {
