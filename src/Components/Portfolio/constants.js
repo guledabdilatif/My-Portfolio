@@ -1,65 +1,54 @@
-import coffee from "../../Assets/web/portfolio1.png";
-import TourandTravelWebsite from "../../Assets/web/portfolio2.png";
-import FoodWebsite from "../../Assets/web/portfolio3.png";
-import FacebookUI from "../../Assets/web/facebookClone-UI.png";
-import portfolio from "../../Assets/web/portfolio.png";
-import YouTubeUI from "../../Assets/web/YoutubeClone-UI.png";
-import rashco from "../../Assets/web/rashco.png";
-import youngbuck from "../../Assets/web/ybv.png";
-import { IoIosLink } from "react-icons/io";
+import assetTrackingSystem from "../../Assets/web/asset-mngt.png";
+import rs from "../../Assets/web/real_state.png";
+
 
 // Web Links
-var coffeeLink = "https://caffeine-site.netlify.app";
-var TourandTravelWebsiteLink = "https://travel-travel-site.netlify.app";
-var FoodWebsiteLink = "https://refreshment.netlify.app";
-var YouTubeLink = "https://youtubeclone-ui.netlify.app/";
-var facebookLink = "https://superb-clafoutis-65679d.netlify.app/";
-var rashcolink = "https://rashcoltd.com/";
-var youngbucklink = "https://youngbucks.co.ke/";
-var portfoliolink = "https://abdiladif-mohamud.netlify.app/";
+var assetTrackingLink = "https://dev-asset.konza.go.ke/";
+
 
 export const WebsitesDetails = [
   {
     id: 1,
-    webname: "Portfolio",
-    webimage: portfolio,
-    weblink: portfoliolink,
-    overview: "A personal portfolio website designed to showcase my skills, projects, and services in a professional and modern way.",
-    problem: "I needed a central online presence to demonstrate my work to potential clients and employers.",
-    solution: "Developed a responsive and interactive portfolio website with smooth animations, light/dark mode, and clear project showcases.",
-    role: "Full-stack developer & designer. Handled everything from design in Figma, coding with React, to deployment on Netlify.",
-    technologies: "React, Tailwind CSS, AOS, React Router, Netlify",
-    impact: "Helped me attract freelance opportunities and created a strong digital identity. Received positive client feedback on design clarity.",
-    collaboration: "Independent project, but I gathered feedback from mentors and peers for improvements.",
-    learning: "Learned advanced React Router usage, SEO optimization for React, and improved UI/UX design principles."
-  },
+    webname: "Asset Tracking & Management System",
+    webimage: assetTrackingSystem,
+    weblink: assetTrackingLink,
+    overview: "A robust and scalable system designed to streamline asset tracking, issuance, and reporting while ensuring compliance with the National Treasury's standards.",
+    problem: "The existing asset management system was non-compliant with the National Treasury’s template, lacked support, and posed auditing challenges. Additionally, manual asset issuance and weak tracking created inefficiencies and data inaccuracies.",
+    solution: "Developed a modern, fully compliant asset tracking and management system with digital asset issuance workflows, bulk import/export functionality, document uploads, and an analytics dashboard for real-time insights.",
+  role: "Frontend Developer & UI/UX Designer. I was responsible for creating user-friendly interfaces in React, designing the system’s layout and workflows, and ensuring compliance-driven usability. I collaborated with the backend team to integrate APIs and focused on accessibility, responsive design, and interactive dashboards.",
+    technologies: "React, Django, Tailwind CSS, REST API, Git,",
+    impact: "The system improved asset compliance, reduced manual processes, and enhanced reporting accuracy. It simplified audits, enabled quick asset searches, and provided real-time dashboards, significantly boosting efficiency for the ICT department.",
+    collaboration: "Worked closely with the ICT department to gather requirements, collaborated with peers for UI/UX feedback, and provided training to ensure smooth adoption. Communication was maintained through weekly reviews and agile sprints.",
+    learning: "Gained deeper expertise in system compliance design, Active Directory integration, and building scalable dashboards. Learned to balance technical requirements with regulatory compliance. Next time, I would focus on earlier user testing to refine workflows faster."
+  }
+  ,
   {
     id: 2,
-    webname: "Facebook Clone UI",
-    webimage: FacebookUI,
-    weblink: facebookLink,
-    overview: "A front-end clone of the Facebook interface built to practice UI development and responsive design.",
-    problem: "Needed a way to sharpen my React skills by replicating a real-world, complex UI design.",
-    solution: "Recreated Facebook’s UI using React components, ensuring responsiveness and modern design consistency.",
-    role: "UI Developer. Focused on breaking down the Facebook UI into reusable React components with CSS styling.",
-    technologies: "React, CSS Flexbox/Grid, Netlify",
-    impact: "Improved my ability to replicate large-scale user interfaces. Demonstrated capability in modern front-end practices.",
-    collaboration: "Independent project, but reviewed by peers for layout accuracy.",
-    learning: "Learned how to modularize UI into reusable components and strengthen responsive design workflow."
+    webname: "Real Estate Mobile App",
+    webimage: rs,
+    // weblink: realEstateAppLink,
+    overview: "A mobile application built to simplify property discovery and agent interaction by providing a digital alternative to physical property searches.",
+    problem: "Most property seekers relied on physical visits or unstructured online listings, which made the process time-consuming and inefficient. There was no centralized, user-friendly solution to browse properties and directly connect with agents.",
+    solution: "Developed a mobile application where users can register, log in, and browse property listings. Each property includes detailed metadata, gallery, and agent information such as email and phone contacts for easy communication.",
+    role: "Full-stack developer. I handled both the frontend (React Native) and backend (Laravel with Sanctum for authentication). I implemented user registration/login, property browsing, and integrated an API to serve property details and agent contacts. Being a personal project, I independently managed design, development, and testing.",
+    technologies: "React Native, Laravel, Laravel Sanctum, MySQL, REST API, Expo",
+    impact: "Provided a digital-first solution for property browsing and agent contact, reducing reliance on physical approaches. The app demonstrated my capability in full-stack mobile development and helped me strengthen my portfolio with a real-world solution.",
+    collaboration: "Independent project. However, I collected feedback from peers and potential users to refine the app's design and usability.",
+    learning: "Improved skills in mobile app development using React Native, API integration, and secure authentication with Laravel Sanctum. Learned how to structure scalable backend APIs for mobile use."
   },
-  {
-    id: 3,
-    webname: "Coffee Website",
-    webimage: coffee,
-    weblink: coffeeLink,
-    overview: "A coffee shop landing page highlighting branding, menu, and customer engagement through design.",
-    problem: "Many local businesses lack a strong digital presence, limiting their ability to attract new customers.",
-    solution: "Built a modern landing page for a coffee brand with clear navigation, visuals, and call-to-action elements.",
-    role: "Front-end developer & designer. Created the UI and deployed the site.",
-    technologies: "HTML, CSS, JavaScript, Netlify",
-    impact: "Showcased how small businesses can stand out online. Helped me demonstrate branding and visual storytelling in web design.",
-    collaboration: "Individual project with design feedback from colleagues.",
-    learning: "Learned how to balance aesthetics with usability and sharpened branding-focused design skills."
-  },
+  // {
+  //   id: 3,
+  //   webname: "Coffee Website",
+  //   webimage: coffee,
+  //   weblink: coffeeLink,
+  //   overview: "A coffee shop landing page highlighting branding, menu, and customer engagement through design.",
+  //   problem: "Many local businesses lack a strong digital presence, limiting their ability to attract new customers.",
+  //   solution: "Built a modern landing page for a coffee brand with clear navigation, visuals, and call-to-action elements.",
+  //   role: "Front-end developer & designer. Created the UI and deployed the site.",
+  //   technologies: "HTML, CSS, JavaScript, Netlify",
+  //   impact: "Showcased how small businesses can stand out online. Helped me demonstrate branding and visual storytelling in web design.",
+  //   collaboration: "Individual project with design feedback from colleagues.",
+  //   learning: "Learned how to balance aesthetics with usability and sharpened branding-focused design skills."
+  // },
   // later we’ll add Tour & Travel, Food, Rashco, YouTube, Young Bucks...
 ];
