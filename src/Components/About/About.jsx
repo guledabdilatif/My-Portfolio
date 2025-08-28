@@ -18,11 +18,11 @@ const About = () => {
       <h1 className="text-center">About Me</h1>
       <div className="row d-flex align-items-start">
         <div className="col-md-4 text-center" data-aos="fade-up">
-          
-            <div className="header-img">
-              <img src={me} alt="" />
-            </div>
-         
+
+          <div className="header-img">
+            <img src={me} alt="" />
+          </div>
+
         </div>
         <div className="col-md-8" data-aos="fade-up">
           <div className="about-content ">
@@ -34,7 +34,7 @@ const About = () => {
                       <FaBook />
                     </div>
                     <h5 className="text-center">Experience</h5>
-                    <h6 className="text-center">2+ Year Working on Projects</h6>
+                    <h6 className="text-center">2+ Year <br /> Working on Projects</h6>
                   </div>
                 </div>
                 <div className="col-md-4">
@@ -58,11 +58,9 @@ const About = () => {
               </div>
             </div>
             <p>
-              I am a dedicated, hardworking and proactive Front-end Developer
-              with a good background in Web-design. I am looking for an
-              opportunity that will allow me to use my technical skills in a
-              challenging environment where I can be a valuable asset to the
-              organization.
+              I’m Abdiladif Mohamud, a Software Engineer with 2+ years of experience building responsive, user-friendly web and mobile applications. 
+              Skilled in React, Laravel, and React Native, I combine clean code with strong UI/UX design to deliver engaging digital solutions. 
+              Passionate about problem-solving and mentoring, I’ve guided 20+ students in web development and design, and I’m always eager to learn and create impactful projects.
             </p>
             <a href="https://wa.me/+254723710285" target="_blank">
               Let's Talk
