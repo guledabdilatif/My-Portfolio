@@ -11,7 +11,7 @@ const ProjectDetails = () => {
 
   return (
     <div className="container-details">
-      <Link to="/">← Back to Portfolio</Link>
+      <Link to="/#Portfolio">← Back to Portfolio</Link>
       <h1>{project.webname}</h1>
       <img src={project.webimage} alt={project.webname} />
 
