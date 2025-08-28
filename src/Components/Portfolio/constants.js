@@ -1,10 +1,11 @@
 import assetTrackingSystem from "../../Assets/web/asset-mngt.png";
 import rs from "../../Assets/web/real_state.png";
+import awardinterior from "../../Assets/web/awardinterior.png";
 
 
 // Web Links
 var assetTrackingLink = "https://dev-asset.konza.go.ke/";
-
+var awardinteriorLink = "https://awardinterior.vercel.app/";
 
 export const WebsitesDetails = [
   {
@@ -12,6 +13,7 @@ export const WebsitesDetails = [
     webname: "Asset Tracking & Management System",
     webimage: assetTrackingSystem,
     weblink: assetTrackingLink,
+    link: true,
     overview: "A robust and scalable system designed to streamline asset tracking, issuance, and reporting while ensuring compliance with the National Treasury's standards.",
     problem: "The existing asset management system was non-compliant with the National Treasury’s template, lacked support, and posed auditing challenges. Additionally, manual asset issuance and weak tracking created inefficiencies and data inaccuracies.",
     solution: "Developed a modern, fully compliant asset tracking and management system with digital asset issuance workflows, bulk import/export functionality, document uploads, and an analytics dashboard for real-time insights.",
@@ -27,6 +29,8 @@ export const WebsitesDetails = [
     webname: "Real Estate Mobile App",
     webimage: rs,
     // weblink: realEstateAppLink,
+    link: false,
+    github: "https://github.com/guledabdilatif/statewise-abdiladif.git",
     overview: "A mobile application built to simplify property discovery and agent interaction by providing a digital alternative to physical property searches.",
     problem: "Most property seekers relied on physical visits or unstructured online listings, which made the process time-consuming and inefficient. There was no centralized, user-friendly solution to browse properties and directly connect with agents.",
     solution: "Developed a mobile application where users can register, log in, and browse property listings. Each property includes detailed metadata, gallery, and agent information such as email and phone contacts for easy communication.",
@@ -36,19 +40,20 @@ export const WebsitesDetails = [
     collaboration: "Independent project. However, I collected feedback from peers and potential users to refine the app's design and usability.",
     learning: "Improved skills in mobile app development using React Native, API integration, and secure authentication with Laravel Sanctum. Learned how to structure scalable backend APIs for mobile use."
   },
-  // {
-  //   id: 3,
-  //   webname: "Coffee Website",
-  //   webimage: coffee,
-  //   weblink: coffeeLink,
-  //   overview: "A coffee shop landing page highlighting branding, menu, and customer engagement through design.",
-  //   problem: "Many local businesses lack a strong digital presence, limiting their ability to attract new customers.",
-  //   solution: "Built a modern landing page for a coffee brand with clear navigation, visuals, and call-to-action elements.",
-  //   role: "Front-end developer & designer. Created the UI and deployed the site.",
-  //   technologies: "HTML, CSS, JavaScript, Netlify",
-  //   impact: "Showcased how small businesses can stand out online. Helped me demonstrate branding and visual storytelling in web design.",
-  //   collaboration: "Individual project with design feedback from colleagues.",
-  //   learning: "Learned how to balance aesthetics with usability and sharpened branding-focused design skills."
-  // },
-  // later we’ll add Tour & Travel, Food, Rashco, YouTube, Young Bucks...
+  {
+    id: 3,
+    webname: "Awaad Interior",
+    webimage: awardinterior,
+    weblink: awardinteriorLink,
+    link: true,
+    overview: "A interior design shop page highlighting branding, galleries, and customer engagement through design.",
+    problem: "Many local businesses lack a strong digital presence, limiting their ability to attract new customers.",
+    solution: "Built a modern landing page for a interior design brand with clear navigation, visuals, and call-to-action elements.",
+    role: "Front-end developer & designer. Created the UI and deployed the site.",
+    technologies: "React, CSS, JavaScript, Netlify",
+    impact: "Showcased how small businesses can stand out online. Helped me demonstrate branding and visual storytelling in web design.",
+    collaboration: "Individual project with design feedback from colleagues.",
+    learning: "Learned how to balance aesthetics with usability and sharpened branding-focused design skills."
+  },
+ 
 ];

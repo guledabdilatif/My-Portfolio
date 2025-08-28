@@ -39,9 +39,15 @@ const ProjectDetails = () => {
       <h2>Learning and Development</h2>
       <p>{project.learning}</p>
 
-      <a href={project.weblink} target="_blank" rel="noopener noreferrer">
-        Visit Live Project
-      </a>
+      {project.link ? (
+        <a href={project.weblink} target="_blank" rel="noopener noreferrer">
+          Visit Live Project
+        </a>
+      ) : (
+        <a href={project.github} target="_blank" rel="noopener noreferrer">
+          View on Github
+        </a>
+      )}
     </div>
   );
 };

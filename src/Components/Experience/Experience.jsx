@@ -6,6 +6,8 @@ import { DiJavascript1, DiPhp } from 'react-icons/di';
 import { FaBootstrap, FaFigma, FaReact, FaGitAlt } from 'react-icons/fa'
 import { SiAdobeillustrator, SiMysql } from 'react-icons/si';
 import { GrWordpress } from "react-icons/gr";
+import { FaLaravel } from "react-icons/fa";
+import { SiPostman } from 'react-icons/si';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -26,7 +28,7 @@ const Experience = () => {
               <AiOutlineHtml5 />
               <DiCss3Full />
               <DiJavascript1 />
-              <FaBootstrap />
+              <FaBootstrap className='mx-4' />
               <FaReact />
             </div>
           </div>
@@ -36,7 +38,8 @@ const Experience = () => {
             <h4>BACKEND</h4>
             <div className="experience-icon text-center">
               <DiPhp />
-              <SiMysql />
+              <SiMysql className='mx-4'/>
+              <FaLaravel />
             </div>
 
           </div>
@@ -48,7 +51,8 @@ const Experience = () => {
               <SiAdobeillustrator />
               <FaFigma />
               <GrWordpress />
-              <FaGitAlt />
+              <FaGitAlt className='mx-4' />
+              <SiPostman />
             </div>
 
           </div>
