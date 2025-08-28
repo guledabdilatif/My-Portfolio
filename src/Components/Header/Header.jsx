@@ -2,8 +2,7 @@ import './header.css'
 import React, { useEffect } from "react";
 import Resume from '../../Assets/images/Resume.pdf'
 import { AiOutlineGithub } from 'react-icons/ai'
-import { FaWhatsapp } from 'react-icons/fa'
-import { RxEnvelopeClosed } from 'react-icons/rx'
+
 
 import Nav from '../Nav/Nav'
 import AOS from 'aos';
@@ -26,7 +25,7 @@ const Header = () => {
                   <div className="margin"></div>
                   <h5>Hello I'm</h5>
                   <h1>ABDILADIF MOHAMUD</h1>
-                  <h4>Frontend Developer</h4>
+                  <h4>Software Engineer</h4>
                   <div className="buttons text-center">
                      <a href={Resume} className='btn' download>Download CV</a>
                      <a href="#Contact" className='btn-primary'>Let's Talk</a>

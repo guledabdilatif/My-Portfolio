@@ -34,7 +34,7 @@ const About = () => {
                       <FaBook />
                     </div>
                     <h5 className="text-center">Experience</h5>
-                    <h6 className="text-center">1 Year Working on Projects</h6>
+                    <h6 className="text-center">2+ Year Working on Projects</h6>
                   </div>
                 </div>
                 <div className="col-md-4">
@@ -43,7 +43,7 @@ const About = () => {
                       <FaAward className="icon" />
                     </div>
                     <h5 className="text-center">Awards</h5>
-                    <h6 className="text-center"><NumberCounter start={0} end={6} postFix='+' /> Awards Received</h6>
+                    <h6 className="text-center"><NumberCounter start={0} end={10} postFix='+' /> Certifications Received</h6>
                   </div>
                 </div>
                 <div className="col-md-4">
@@ -52,7 +52,7 @@ const About = () => {
                       <AiFillProject className="icon" />
                     </div>
                     <h5 className="text-center">Projects</h5>
-                    <h6 className="text-center"><NumberCounter start={0} end={10} postFix='+' delay='3' />Projects Completed</h6>
+                    <h6 className="text-center"><NumberCounter start={0} end={50} postFix='+' delay='3' />Projects Completed</h6>
                   </div>
                 </div>
               </div>

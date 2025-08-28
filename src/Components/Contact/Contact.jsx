@@ -3,20 +3,16 @@ import "./contact.css"
 import { RxEnvelopeClosed } from "react-icons/rx";
 import { FaWhatsapp } from "react-icons/fa";
 import { BiPhoneCall } from "react-icons/bi";
-import { useRef } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Contact = () => {
-  
   useEffect(() => {
     AOS.init({
       duration: 2000
     });
   }, [])
-  const submitform = () => {
-    alert('Your details have been successfully submitted')
-  }
+
   const onSubmit = async (event) => {
     event.preventDefault();
     const form = event.target;
@@ -37,9 +33,11 @@ const Contact = () => {
     }).then((res) => res.json());
 
     if (res.success) {
+      alert('Your details have been successfully submitted ✅');
       console.log("Success", res);
-      // Clear the form after successful submission
       form.reset();
+    } else {
+      alert('Something went wrong. Please try again ❌');
     }
   };
 
@@ -71,17 +69,18 @@ const Contact = () => {
         </div>
         <div className="col-md-7" data-aos="fade-up">
           <form onSubmit={onSubmit}>
-            <input type="text" name="name" placeholder="Your Name" />
+            <input type="text" name="name" placeholder="Your Name" required />
 
-            <input type="email" name="email" placeholder="Email" />
+            <input type="email" name="email" placeholder="Email" required />
 
             <textarea
               name="message"
-              placeholder=" Your Message"
+              placeholder="Your Message"
               cols="30"
               rows="10"
+              required
             />
-            <button type="submit" onClick={() => { submitform() }}>Submit</button>
+            <button type="submit">Submit</button>
           </form>
         </div>
       </div>
